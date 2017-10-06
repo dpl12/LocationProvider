@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dpl.locationprovider.Distance">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/startLatitude"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="起始经度"/>
+
+        <EditText
+            android:id="@+id/startLongitude"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="起始纬度"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/endLatitude"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="终点经度"/>
+
+        <EditText
+            android:id="@+id/endLongitude"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="终点纬度"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算距离"
+            android:onClick="click"/>
+        <EditText
+            android:id="@+id/etDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="最终距离"/>
+    </LinearLayout>
+</LinearLayout>
